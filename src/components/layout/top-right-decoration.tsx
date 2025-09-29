@@ -1,7 +1,7 @@
 export const TopRightDecoration = () => {
     return (
         <svg
-            className="absolute right-0 top-0 w-[72vw] max-h-[64vw] h-auto"
+            className="absolute right-0 top-0 w-[64vw] max-h-[64vw] h-auto"
             width="930"
             height="725"
             viewBox="0 0 930 725"

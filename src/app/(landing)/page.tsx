@@ -1,21 +1,13 @@
-import { TopRightDecoration } from '@/components/layout/top-right-decoration';
-import Image from 'next/image';
+import { Hero } from './hero';
 
 export default function Home() {
     return (
         <>
-            <TopRightDecoration />
-            <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-                <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-                    <Image
-                        src="/images/hero-pizza.png"
-                        alt="Pizza"
-                        width={300}
-                        height={300}
-                        draggable={false}
-                    />
-                </main>
-            </div>
+            {' '}
+            <main className="overflow-hidden relative z-50 w-full flex flex-col items-center justify-between px-72 max-3xl:px-64 max-2xl:px-48 max-xl:px-48 max-lg:px-24 max-md:px-12 max-sm:px-6">
+                <Hero />
+                <p>dsds</p>
+            </main>
         </>
     );
 }

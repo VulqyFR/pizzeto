@@ -1,3 +1,5 @@
+'use client';
+
 import { SearchBar } from '@/components/ui/searchbar';
 import pizzasData from '@/data/pizzas.json';
 import { useRouter } from 'next/navigation';
@@ -11,7 +13,7 @@ interface Pizza {
     image: string;
 }
 
-export function NavSearchBar() {
+export const NavSearchBar = () => {
     const router = useRouter();
     const pizzas = pizzasData as Pizza[];
 
@@ -25,4 +27,4 @@ export function NavSearchBar() {
             placeholder="Rechercher une pizza..."
         />
     );
-}
+};

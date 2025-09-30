@@ -1,0 +1,8 @@
+{
+    "id": 1,
+    "name": "Chèvre",
+    "slug": "chevre",
+    "description": "L’authentique saveur napolitaine. Une pâte croustillante, du fromage fondant Offre du mois : 2 achetées = 1 offerte !",
+    "price": 11.5,
+    "image": "/images/chevre.png"
+}

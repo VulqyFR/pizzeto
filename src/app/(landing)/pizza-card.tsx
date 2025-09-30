@@ -19,7 +19,7 @@ interface PizzaCardItemProps {
 export const PizzaCardItem = ({ pizza }: PizzaCardItemProps) => (
     <Card className="bg-background text-foreground w-fit relative rounded-2xl max-xl:my-6 min-w-64 xl:min-h-80 xl:min-w-80">
         <div className="min-h-56  xl:min-h-72"></div>
-        <CardHeader className="absolute -top-12 left-1/2 -translate-x-1/2 w-56 xl:w-72 xl:h-72 rounded-full bg-[#FFF3E0] flex items-center justify-center p-4 shadow-lg">
+        <CardHeader className="absolute -top-12 left-1/2 -translate-x-1/2 w-56 xl:w-72 xl:h-72 rounded-full bg-[#f1ece5] flex items-center justify-center p-4 shadow-lg">
             <Image
                 src={pizza.image}
                 alt="Pizza"

@@ -2,7 +2,7 @@ import { PizzaCarousel } from './pizza-carousel';
 
 export const OurPizzas = () => {
     return (
-        <section className="relative bg-foreground w-full my-16">
+        <section className="relative bg-foreground w-full mt-16">
             <div className="absolute lg:-top-40 md:-top-32 -top-22 left-0 w-full overflow-hidden">
                 <svg
                     className="w-full h-48 md:h-72 lg:h-96"

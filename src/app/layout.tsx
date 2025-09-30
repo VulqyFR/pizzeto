@@ -17,9 +17,9 @@ const rubikSprayPaint = Rubik_Spray_Paint({
 });
 
 export const metadata: Metadata = {
-    title: 'Pizzeto - Commande de pizzas artisanales en ligne',
+    title: 'Pizzeto - Commander des pizzas artisanales',
     description:
-        'Pizzeto vous propose la commande de pizzas artisanales, personnalisables et livrées rapidement. Découvrez nos recettes originales et profitez d’une expérience utilisateur optimale.',
+        'Pizzeto vous propose la commande de pizzas artisanales, livrées rapidement. Découvrez nos recettes originales et profitez d’une expérience utilisateur optimale.',
     keywords: [
         'pizza',
         'commande pizza',
@@ -30,12 +30,12 @@ export const metadata: Metadata = {
         'pizza en ligne',
         'pizzeria',
     ],
-    authors: [{ name: 'Pizzeto', url: 'https://pizzeto.com' }],
-    creator: 'Pizzeto',
+    authors: [{ name: 'Elvin Chauvel', url: 'https://pizzeto.com' }],
+    creator: 'Elvin Chauvel',
     openGraph: {
-        title: 'Pizzeto - Commande de pizzas artisanales en ligne',
+        title: 'Pizzeto - Commander des pizzas artisanales',
         description:
-            'Commandez vos pizzas artisanales préférées sur Pizzeto et profitez d’une livraison rapide.',
+            'Commandez vos pizzas artisanales préférées chez Pizzeto et profitez d’une livraison rapide.',
         url: 'https://pizzeto.com',
         siteName: 'Pizzeto',
         images: [
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Pizzeto - Commande de pizzas artisanales en ligne',
+        title: 'Pizzeto - Commander des pizzas artisanales',
         description:
-            'Commandez vos pizzas artisanales préférées sur Pizzeto et profitez d’une livraison rapide.',
+            'Commandez vos pizzas artisanales préférées chez Pizzeto et profitez d’une livraison rapide.',
         images: ['https://pizzeto.com/og-image.jpg'],
     },
 };

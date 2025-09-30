@@ -1,8 +1,8 @@
+import { Navbar } from '@/components/layout/navbar/navbar';
+import { TopRightDecoration } from '@/components/layout/top-right-decoration';
 import type { Metadata } from 'next';
 import { Poppins, Rubik_Spray_Paint } from 'next/font/google';
 import './globals.css';
-import { Navbar } from '@/components/layout/navbar/navbar';
-import { TopRightDecoration } from '@/components/layout/top-right-decoration';
 
 const poppins = Poppins({
     subsets: ['latin'],
@@ -61,7 +61,6 @@ export const metadata: Metadata = {
             'Commandez vos pizzas artisanales préférées sur Pizzeto et profitez d’une livraison rapide.',
         images: ['https://pizzeto.com/og-image.jpg'],
     },
-    themeColor: '#ff5722',
 };
 
 export default function RootLayout({

@@ -4,7 +4,7 @@ export const Banner = () => {
     const bannerText = 'Livraison gratuite à domicile';
 
     return (
-        <div className="absolute left-1/2 max-xl:mt-108 -translate-x-1/2 -translate-y-6 w-[120vw] bg-foreground py-8 rotate-3 px-20 sm:px-32">
+        <div className="absolute left-1/2 max-xl:mt-16 -translate-x-1/2 -translate-y-6 w-[120vw] bg-foreground py-8 rotate-3 px-20 sm:px-32">
             <div className="relative">
                 <div className="overflow-hidden whitespace-nowrap">
                     <div className="inline-block animate-marquee">

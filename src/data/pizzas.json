@@ -5,7 +5,7 @@
         "slug": "margherita",
         "description": "Sauce tomate, mozzarella, basilic frais",
         "price": 9.5,
-        "image": "/images/pizzas/margherita.jpg"
+        "image": "/images/margherita.png"
     },
     {
         "id": 2,
@@ -13,22 +13,22 @@
         "slug": "reine",
         "description": "Sauce tomate, mozzarella, jambon, champignons",
         "price": 11,
-        "image": "/images/pizzas/reine.jpg"
+        "image": "/images/reine.png"
     },
     {
         "id": 3,
-        "name": "4 Fromages",
-        "slug": "4-fromages",
-        "description": "Sauce tomate, mozzarella, gorgonzola, chèvre, emmental",
+        "name": "Chorizo",
+        "slug": "chorizo",
+        "description": "Sauce tomate, mozzarella, chorizo",
         "price": 12,
-        "image": "/images/pizzas/4fromages.jpg"
+        "image": "/images/chorizo.png"
     },
     {
         "id": 4,
-        "name": "Végétarienne",
-        "slug": "vegetarienne",
-        "description": "Sauce tomate, mozzarella, légumes grillés",
+        "name": "Chèvre",
+        "slug": "chevre",
+        "description": "Sauce tomate, mozzarella, chèvre",
         "price": 11.5,
-        "image": "/images/pizzas/vegetarienne.jpg"
+        "image": "/images/chevre.png"
     }
 ]

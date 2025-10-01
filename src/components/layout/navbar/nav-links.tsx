@@ -8,11 +8,19 @@ const navLinks = [
     { href: '/la-carte', label: 'La carte' },
 ];
 
-export const NavLinks = () => {
+interface NavLinksProps {
+    mobile?: boolean;
+}
+
+export const NavLinks = ({ mobile }: NavLinksProps) => {
     const pathname = usePathname();
 
     return (
-        <nav className="flex items-center gap-6 mt-1 max-lg:hidden">
+        <nav
+            className={`flex items-center gap-6 mt-1 ${
+                !mobile ? 'max-lg:hidden' : 'flex-col gap-2 items-start'
+            }`}
+        >
             {navLinks.map((link) => (
                 <Link
                     key={link.href}

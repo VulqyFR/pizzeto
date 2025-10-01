@@ -19,6 +19,7 @@ export const NavSearchBar = () => {
 
     return (
         <SearchBar
+            className="z-[100]"
             items={pizzas}
             getItemKey={(pizza) => pizza.id}
             getItemLabel={(pizza) => pizza.name}

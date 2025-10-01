@@ -1,5 +1,6 @@
 import { PhoneCall } from 'lucide-react';
 import { Logo } from '../../ui/logo';
+import { BurgerMenu } from './burger-menu';
 import { LanguageSelector } from './language-selector';
 import { NavLinks } from './nav-links';
 import { NavSearchBar } from './nav-searchbar';
@@ -25,6 +26,7 @@ export const Navbar = () => {
                     </div>
                 </div>
             </div>
+            <BurgerMenu />
         </header>
     );
 };

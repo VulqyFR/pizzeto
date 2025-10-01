@@ -14,10 +14,10 @@ export const PizzaOfTheMonth = () => {
     return (
         <div className="bg-background w-full py-24 ">
             <div className="relative w-full flex flex-col items-center gap-16 px-12">
-                <h2 className="text-6xl xl:text-7xl text-center font-rubik-spray mb-8">
+                <h2 className="[@media(max-width:450px)]:text-4xl text-5xl md:text-6xl xl:text-7xl text-center font-rubik-spray mb-8">
                     Pizza du mois
                 </h2>
-                <Card className="bg-secondary border-none text-foreground w-fit relative rounded-4xl max-xl:my-6 min-w-64 xl:min-h-160 xl:min-w-120">
+                <Card className="bg-secondary border-none text-foreground w-fit relative rounded-4xl max-xl:my-6 min-h-120 xl:min-h-160 xl:min-w-120">
                     <div className="min-h-72 max-md:min-h-48"></div>
                     <CardHeader className="absolute -top-24 left-1/2 ml-1.5 -translate-x-1/2 w-108 h-108 max-md:h-80 max-md:w-80 flex items-center justify-center p-4">
                         <Image
@@ -29,17 +29,19 @@ export const PizzaOfTheMonth = () => {
                             className="object-contain md:object-right select-none"
                         />
                     </CardHeader>
-                    <CardContent className="relative flex flex-col gap-10 items-center justify-center px-6 py-4 mb-4">
+                    <CardContent className="relative flex flex-col gap-10 items-center justify-center px-4 py-4 mb-4">
                         <div className="space-y-6 mx-auto text-center">
-                            <CardTitle className=" font-normal relative mt-4 text-6xl max-md:text-5xl font-rubik-spray text-background">
+                            <CardTitle className=" font-normal relative mt-4 md:text-6xl max-md:text-5xl text-4xl [@media(max-width:450px)]:text-3xl font-rubik-spray text-background">
                                 Pizza {pizza.name}
                             </CardTitle>
-                            <CardDescription className="text-background mt-2 text-center max-w-md font-semibold text-xl max-md:text-lg">
+                            <CardDescription className="text-background mt-2 text-center max-w-md font-semibold md:text-xl max-md:text-lg [@media(max-width:450px)]:text-sm">
                                 {pizza.description}
                             </CardDescription>
                         </div>
                         <Button
-                            asChild={<Link href="/about" />}
+                            asChild={
+                                <Link href={`/nos-pizzas?${pizza.slug}`} />
+                            }
                             size={'lg'}
                             className="px-8 rounded-2xl bg-background text-secondary hover:bg-background/90 focus-visible:ring-background"
                         >
@@ -47,7 +49,7 @@ export const PizzaOfTheMonth = () => {
                         </Button>
                     </CardContent>
                 </Card>{' '}
-                <div className="absolute lg:top-204 md:top-104 top-116 right-0 w-full overflow-hidden">
+                <div className="absolute xl:top-204 lg:top-208 md:top-212 top-192 [@media(max-width:450px)]:top-180 right-0 w-full overflow-hidden">
                     <svg
                         viewBox="0 0 834 1062"
                         preserveAspectRatio="none"

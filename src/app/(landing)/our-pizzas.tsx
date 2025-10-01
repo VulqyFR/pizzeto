@@ -33,7 +33,7 @@ export const OurPizzas = () => {
             </div>
             <div className="relative bg-foreground py-16 flex w-full items-center justify-center">
                 <h2
-                    className="text-muted-foreground/80 font-rubik-spray absolute xl:text-[12rem] lg:text-[8rem] md:text-8xl text-6xl xl:-top-4 md:-top-2 top-0 xl:left-16 lg:left-12 md:left-8 left-4 inset-0"
+                    className="text-muted-foreground/80 font-rubik-spray absolute xl:text-[12rem] lg:text-[8rem] md:text-8xl text-6xl [@media(max-width:450px)]:text-5xl xl:-top-4 md:-top-2 top-0 xl:left-16 lg:left-12 md:left-8 left-4 inset-0"
                     aria-hidden="true"
                     role="presentation"
                 >

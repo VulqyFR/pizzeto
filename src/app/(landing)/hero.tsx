@@ -8,7 +8,7 @@ export const Hero = () => {
         <section className="w-full py-32 xl:py-20 mb-16 px-72 max-3xl:px-64 max-2xl:px-48 max-xl:px-48 max-lg:px-24 max-md:px-12 max-sm:px-6">
             <div className="relative flex flex-col xl:flex-row items-center justify-between">
                 <div className="xl:mb-24 flex flex-col gap-4 flex-1 items-center xl:items-start text-center md:text-left relative z-10 px-4">
-                    <h1 className="max-xl:text-center flex flex-col font-rubik-spray text-6xl xl:text-7xl font-rubik text-foreground max-w-3xl">
+                    <h1 className="max-xl:text-center flex flex-col font-rubik-spray [@media(max-width:470px)]:text-5xl text-6xl xl:text-7xl font-rubik text-foreground max-w-3xl">
                         <span className="font-rubik-spray">
                             Plus qu&apos; une
                         </span>

@@ -4,10 +4,10 @@ export const CustomerReview = () => {
     return (
         <div className="bg-foreground w-full pt-32 pb-48 flex flex-col items-center gap-16 px-12">
             <div className="relative">
-                <h2 className="text-6xl xl:text-7xl text-center font-rubik-spray mb-8 text-primary">
+                <h2 className="[@media(max-width:470px)]:text-5xl text-6xl xl:text-7xl text-center font-rubik-spray mb-8 text-primary">
                     Avis clients
                 </h2>
-                <div className="absolute -right-12 top-20 transform -translate-y-1/2">
+                <div className="absolute -right-12 top-20 [@media(max-width:470px)]:top-12 transform -translate-y-1/2">
                     <svg
                         width="239"
                         height="56"

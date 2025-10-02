@@ -16,10 +16,10 @@ export const PaymentMethod = () => {
             </div>
             <div className="w-full flex items-center justify-center">
                 <div className="flex flex-col gap-8 max-w-3xl max-md:px-16">
-                    <h2 className="mt-48 [@media(max-width:470px)]:text-5xl text-6xl xl:text-7xl text-center font-rubik-spray mb-8 text-background">
+                    <h2 className="mt-48 [@media(max-width:470px)]:text-4xl sm:text-5xl text-6xl xl:text-7xl text-center font-rubik-spray mb-8 text-background">
                         Moyens de paiement
                     </h2>
-                    <p className="text-background max-xl:max-w-lg max-md:px-16 max-sm:px-0 text-left flex flex-col max-md:text-xs md:text-sm lg:text-md xl:text-lg font-semibold">
+                    <p className="text-background max-xl:max-w-lg max-md:px-16 max-sm:px-0 text-left flex flex-col gap-3 max-md:text-xs md:text-sm lg:text-md xl:text-lg font-semibold">
                         <span>
                             Pour vous simplifier la vie, nous acceptons
                             plusieurs modes de paiement :

@@ -3,29 +3,12 @@ import { Navbar } from '@/components/layout/navbar/navbar';
 import pizzas from '@/data/pizzas.json';
 import { PizzaCard } from './pizza-card';
 
-export const metadata = {
-    title: 'Pizzeto - La carte',
-    description:
-        'Découvrez toutes nos pizzas artisanales, leurs ingrédients, tailles et prix. Commandez en ligne chez Pizzeto.',
-    keywords: [
-        'pizzeto',
-        'la carte',
-        'menu',
-        'pizzas',
-        'artisanales',
-        'ingrédients',
-        'prix',
-        'commander pizza',
-        'pizzeria',
-    ],
-};
-
 export default function RestaurentMenu() {
     return (
         <div className="bg-background ">
             <Navbar variant="primary" />
             <main className="overflow-hidden relative z-40 w-full flex flex-col items-center min-h-screen">
-                <section className="w-full mb-36 py-32 xl:py-20 px-72 max-3xl:px-64 max-2xl:px-48 max-xl:px-48 max-lg:px-24 max-md:px-12 max-sm:px-6">
+                <section className="w-full mb-36 pt-8 pb-32 xl:pb-20 px-72 max-3xl:px-64 max-2xl:px-48 max-xl:px-48 max-lg:px-24 max-md:px-12 max-sm:px-6">
                     <div className="relative flex items-center justify-between">
                         <div className="mb-24 flex flex-col gap-4 flex-1 items-start relative z-10 px-4">
                             <div className="flex gap-4">

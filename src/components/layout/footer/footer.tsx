@@ -1,9 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { Logo } from '@/components/ui/logo';
+import { cn } from '@/lib/cn';
 import Image from 'next/image';
 
 interface FooterProps {
-    background?: 'default' | 'secondary';
+    background?: 'default' | 'foreground' | 'secondary';
     variant?: 'default' | 'primary';
 }
 
@@ -12,7 +13,13 @@ export const Footer = ({
     background = 'default',
 }: FooterProps) => {
     return (
-        <footer className="relative bg-background text-foreground w-full py-16 z-50">
+        <footer
+            className={cn(
+                `relative ${
+                    variant === 'default' ? 'bg-background' : 'bg-primary'
+                }  text-foreground w-full py-16 z-50`
+            )}
+        >
             <div className="absolute -top-1 left-0 w-full overflow-hidden leading-none">
                 <svg
                     className="w-full h-[120px]"
@@ -22,9 +29,13 @@ export const Footer = ({
                 >
                     <path
                         d="M0,120 C360,0 1080,0 1440,120 L1440,0 L0,0 Z"
-                        fill={`${
-                            background === 'default' ? '#E8E3D9' : '#ddb30a'
-                        }`}
+                        fill={
+                            background === 'foreground'
+                                ? '#E8E3D9'
+                                : background === 'secondary'
+                                ? '#ddb30a'
+                                : '#1E1E1E'
+                        }
                     />
                 </svg>
             </div>

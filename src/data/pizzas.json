@@ -3,32 +3,48 @@
         "id": 1,
         "name": "Margherita",
         "slug": "margherita",
-        "description": "Sauce tomate, mozzarella, basilic frais",
+        "description": "La pizza classique italienne.",
+        "ingredients": ["Sauce tomate", "Mozzarella", "Basilic frais"],
         "price": 9.5,
-        "image": "/images/margherita.png"
+        "image": "/images/margherita.png",
+        "taille": "33cm",
+        "calories": 850,
+        "vegan": false
     },
     {
         "id": 2,
         "name": "Reine",
         "slug": "reine",
-        "description": "Sauce tomate, mozzarella, jambon, champignons",
+        "description": "La pizza préférée des amateurs de jambon.",
+        "ingredients": ["Sauce tomate", "Mozzarella", "Jambon", "Champignons"],
         "price": 11,
-        "image": "/images/reine.png"
+        "image": "/images/reine.png",
+        "taille": "33cm",
+        "calories": 950,
+        "vegan": false
     },
     {
         "id": 3,
         "name": "Chorizo",
         "slug": "chorizo",
-        "description": "Sauce tomate, mozzarella, chorizo",
+        "description": "Pour les amateurs de saveurs relevées.",
+        "ingredients": ["Sauce tomate", "Mozzarella", "Chorizo"],
         "price": 12,
-        "image": "/images/chorizo.png"
+        "image": "/images/chorizo.png",
+        "taille": "33cm",
+        "calories": 980,
+        "vegan": false
     },
     {
         "id": 4,
         "name": "Chèvre",
         "slug": "chevre",
-        "description": "Sauce tomate, mozzarella, chèvre",
+        "description": "La pizza gourmande au fromage de chèvre.",
+        "ingredients": ["Sauce tomate", "Mozzarella", "Chèvre"],
         "price": 11.5,
-        "image": "/images/chevre.png"
+        "image": "/images/chevre.png",
+        "taille": "33cm",
+        "calories": 920,
+        "vegan": false
     }
 ]

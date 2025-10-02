@@ -1,4 +1,3 @@
-import { Navbar } from '@/components/layout/navbar/navbar';
 import type { Metadata } from 'next';
 import { Poppins, Rubik_Spray_Paint } from 'next/font/google';
 import './globals.css';
@@ -72,7 +71,6 @@ export default function RootLayout({
             <body
                 className={`${poppins.variable} ${rubikSprayPaint.variable} antialiased relative min-h-screen`}
             >
-                <Navbar />
                 {children}
             </body>
         </html>

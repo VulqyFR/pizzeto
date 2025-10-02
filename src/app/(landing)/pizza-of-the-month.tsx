@@ -13,7 +13,7 @@ import Link from 'next/link';
 export const PizzaOfTheMonth = () => {
     return (
         <div className="bg-background w-full py-24 ">
-            <div className="relative w-full flex flex-col items-center gap-16 px-12">
+            <div className="relative w-full flex flex-col items-center gap-16 px-12 [@media(max-width:450px)]:px-4">
                 <h2 className="[@media(max-width:450px)]:text-4xl text-5xl md:text-6xl xl:text-7xl text-center font-rubik-spray mb-8">
                     Pizza du mois
                 </h2>
@@ -34,7 +34,7 @@ export const PizzaOfTheMonth = () => {
                             <CardTitle className=" font-normal relative mt-4 md:text-6xl max-md:text-5xl text-4xl [@media(max-width:450px)]:text-3xl font-rubik-spray text-background">
                                 Pizza {pizza.name}
                             </CardTitle>
-                            <CardDescription className="text-background mt-2 text-center max-w-md font-semibold md:text-xl max-md:text-lg [@media(max-width:450px)]:text-sm">
+                            <CardDescription className="text-background mt-2 text-center max-w-sm md:max-w-md font-semibold text-lg max-md:text-sm [@media(max-width:450px)]:text-sm">
                                 {pizza.description}
                             </CardDescription>
                         </div>
@@ -49,7 +49,7 @@ export const PizzaOfTheMonth = () => {
                         </Button>
                     </CardContent>
                 </Card>{' '}
-                <div className="absolute xl:top-204 lg:top-208 md:top-212 top-192 [@media(max-width:450px)]:top-180 right-0 w-full overflow-hidden">
+                <div className="absolute xl:top-204 lg:top-208 md:top-212 top-184 [@media(max-width:450px)]:top-180 right-0 w-full overflow-hidden">
                     <svg
                         viewBox="0 0 834 1062"
                         preserveAspectRatio="none"

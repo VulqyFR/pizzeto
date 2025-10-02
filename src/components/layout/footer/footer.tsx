@@ -53,7 +53,7 @@ export const Footer = ({
                     </div>
                     <div className="min-w-48 max-md:min-w-20 md:min-h-32" />
                     <div className="flex flex-col gap-4">
-                        <h2 className="relative text-5xl max-md:text-3xl flex flex-col gap-2 font-bold mb-4">
+                        <div className="relative text-5xl max-md:text-3xl flex flex-col gap-2 font-bold mb-4">
                             <span>LIVRAISON</span>
                             <span>GRATUITE</span>
                             <div className="absolute top-18 left-12 max-md:top-12 w-full overflow-hidden">
@@ -73,7 +73,7 @@ export const Footer = ({
                                     />
                                 </svg>
                             </div>
-                        </h2>
+                        </div>
                         <Button className="bg-secondary text-background rounded-full px-8">
                             Voir la carte
                         </Button>

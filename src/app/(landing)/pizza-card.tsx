@@ -1,6 +1,6 @@
 'use client';
 
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import pizzaData from '@/data/pizzas.json';
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
@@ -30,15 +30,14 @@ export const PizzaCardItem = ({ pizza }: PizzaCardItemProps) => (
             />
         </CardHeader>
         <CardContent className="relative flex items-center justify-center px-6 py-4 mb-4">
-            <CardTitle className="w-fit font-normal relative">
-                Pizza <span className="text-primary">{pizza.name}</span>
-                <Link
-                    href={`/menu/${pizza.slug}`}
-                    className="absolute -right-6 top-1/2 -translate-y-1/2 flex items-center"
-                >
-                    <ChevronRight />
+            <h2 className="-ml-2 w-fit font-normal relative text-2xl leading-none tracking-tight">
+                <Link href={`/menu/${pizza.slug}`}>
+                    Pizza <span className="text-primary">{pizza.name}</span>
+                    <span className="absolute -right-6 top-1/2 -translate-y-1/2 flex items-center">
+                        <ChevronRight />
+                    </span>
                 </Link>
-            </CardTitle>
+            </h2>
         </CardContent>
     </Card>
 );

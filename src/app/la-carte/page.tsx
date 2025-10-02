@@ -3,6 +3,23 @@ import { Navbar } from '@/components/layout/navbar/navbar';
 import pizzas from '@/data/pizzas.json';
 import { PizzaCard } from './pizza-card';
 
+export const metadata = {
+    title: 'Pizzeto - La carte',
+    description:
+        'Découvrez toutes nos pizzas artisanales, leurs ingrédients, tailles et prix. Commandez en ligne chez Pizzeto.',
+    keywords: [
+        'pizzeto',
+        'la carte',
+        'menu',
+        'pizzas',
+        'artisanales',
+        'ingrédients',
+        'prix',
+        'commander pizza',
+        'pizzeria',
+    ],
+};
+
 export default function RestaurentMenu() {
     return (
         <div className="bg-background ">

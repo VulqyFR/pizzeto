@@ -18,16 +18,6 @@ export const metadata: Metadata = {
     title: 'Pizzeto - Commander des pizzas artisanales',
     description:
         'Pizzeto vous propose la commande de pizzas artisanales, livrées rapidement. Découvrez nos recettes originales et profitez d’une expérience utilisateur optimale.',
-    keywords: [
-        'pizza',
-        'commande pizza',
-        'pizzas artisanales',
-        'livraison pizza',
-        'recettes pizza',
-        'Pizzeto',
-        'pizza en ligne',
-        'pizzeria',
-    ],
     authors: [{ name: 'Elvin Chauvel', url: 'https://pizzeto.com' }],
     creator: 'Elvin Chauvel',
     openGraph: {
@@ -68,6 +58,12 @@ export default function RootLayout({
 }) {
     return (
         <html lang="fr">
+            <head>
+                <meta
+                    name="description"
+                    content="Pizzeto vous propose la commande de pizzas artisanales, livrées rapidement. Découvrez nos recettes originales et profitez d’une expérience utilisateur optimale."
+                />
+            </head>
             <body
                 className={`${poppins.variable} ${rubikSprayPaint.variable} antialiased relative min-h-screen`}
             >

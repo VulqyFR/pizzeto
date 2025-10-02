@@ -27,7 +27,7 @@ export const Logo = (props: LogoProps) => {
                     transform="translate(24,32)"
                 />
                 <defs>
-                    <mask id="mask0">
+                    <mask id="mask1">
                         <rect width="48" height="48" fill="black" />
                         <path
                             d="M15.8803 39.3985C15.8803 39.3985 10.5378 7.9925 13.0189 9.24625C15.5 10.5 38.5 21 40.5005 21.9991C42.5009 22.9983 15.8803 39.3985 15.8803 39.3985Z"
@@ -62,11 +62,14 @@ export const Logo = (props: LogoProps) => {
                 <path
                     d="M15.8803 39.3985C15.8803 39.3985 10.5378 7.9925 13.0189 9.24625C15.5 10.5 38.5 21 40.5005 21.9991C42.5009 22.9983 15.8803 39.3985 15.8803 39.3985Z"
                     fill="#EABD09"
-                    mask="url(#mask0)"
+                    mask="url(#mask1)"
                 />
             </svg>
             {!props.withoutText && (
-                <span className="text-2xl font-bold text-secondary select-none">
+                <span
+                    aria-hidden
+                    className="text-2xl font-bold text-secondary select-none"
+                >
                     Pizzeto
                 </span>
             )}
